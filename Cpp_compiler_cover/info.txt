@@ -1,0 +1,8 @@
+todo in gui version:
+-entry for to compile
+-entry for exe file
+-entry for g++ path
+-button for compile
+-button for run
+-button for compile & run
+-use config file, to store last data
