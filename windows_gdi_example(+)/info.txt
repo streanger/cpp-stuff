@@ -1,0 +1,2 @@
+-drawing a line using GDI Plus:
+	https://docs.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-drawing-a-line-use

@@ -1,0 +1,31 @@
+stdafx.h
+
+http://www.cplusplus.com/forum/beginner/62451/
+
+create empty file named stdafx.h in directory
+
+-----------------------------------------------------------------------
+
+
+undefined reference to `GdiplusStartup@12'
+https://stackoverflow.com/questions/9542558/undefined-reference-to-gdiplusstartup12
+
+I had similar messages as you and after some research I've come to the following: place -lgdiplus after *.cpp files on the command line. Example:
+
+g++ -mwindows program.cpp -lgdiplus
+That command compiled my GDI+ program.
+
+
+
+-----------------------------------------------------------------------
+
+undefined reference to `__imp_GetStockObject'
+https://stackoverflow.com/questions/1340824/undefined-reference-to-getstockobject4
+Check the documentation, and make sure you link to the required libraries (-lgdi32).
+http://msdn.microsoft.com/en-us/library/dd144925%28VS.85%29.aspx
+
+append -lgdi32 parameter, to command:
+    commands = [compilerPath, "-o", file.split('.')[0] + ".exe", file, '-lgdiplus', '-lgdi32']
+    
+    
+    
